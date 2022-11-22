@@ -9,6 +9,7 @@ const FormContact = () => {
 	const [ formStatus, setFormStatus ] = useState( 'Enviar mensaje' );
 	const [ total, setTotal ] = useState( 0 );
 	const button = useRef();
+	const form = useRef();
 
 	const request = ( data ) => {
 		// ================================================================================
@@ -47,6 +48,7 @@ const FormContact = () => {
 
 				if( response.status === 'success' ) {
 					// Clean form
+					form.current.reset();
 
 					Swal.fire( {
 						"confirmButtonText": "Accept",
@@ -144,7 +146,7 @@ const FormContact = () => {
 		<div className="FormContact container mt-5">
 			<h2 className="mb-3">Contacto</h2>
 
-			<form onSubmit={onSubmit}>
+			<form ref={form} onSubmit={onSubmit}>
 				<div className="row">
 					<div className="col-lg-6 col-12">
 						<div className="mb-3">
