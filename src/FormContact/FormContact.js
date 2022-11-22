@@ -185,7 +185,7 @@ const FormContact = () => {
 				</div>
 
 				<div className="form-check">
-					<input id="privacy" className="form-check-input" required="required" type="checkbox" value="" />
+					<input id="privacy" className="form-check-input" required="required" type="checkbox" value="Yes" />
 					<label className="form-check-label" htmlFor="privacy">
 						Acepto las condiciones del servicio y la <a href="https://ferrebanos.com.mx/file/aviso-de-privacidad.pdf">política de privacidad</a> de esta página.
 					</label>
