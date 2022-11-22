@@ -153,7 +153,7 @@ const FormContact = () => {
 							<label className="form-label" htmlFor="name">
 								Nombre: *
 							</label>
-							<input id="name" className="form-control" placeholder="Nombre" required="required" type="text" />
+							<input id="name" className="form-control" maxlength="100" placeholder="Nombre" required="required" type="text" />
 						</div>
 					</div>
 					<div className="col-lg-6 col-12">
@@ -161,7 +161,7 @@ const FormContact = () => {
 							<label className="form-label" htmlFor="email">
 								Correo electrónico: *
 							</label>
-							<input id="email" className="form-control" placeholder="Correo electrónico" required="required" type="email" />
+							<input id="email" className="form-control" maxlength="60" placeholder="Correo electrónico" required="required" type="email" />
 						</div>
 					</div>
 				</div>
@@ -170,7 +170,7 @@ const FormContact = () => {
 					<label className="form-label" htmlFor="tel">
 						Teléfono: *
 					</label>
-					<input id="tel" className="form-control" placeholder="Teléfono" required="required" type="tel" />
+					<input id="tel" className="form-control" maxlength="30" placeholder="Teléfono" required="required" type="tel" />
 				</div>
 
 				<div className="mb-3">
