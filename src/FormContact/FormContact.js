@@ -87,13 +87,14 @@ const FormContact = () => {
 		setFormStatus( 'Enviando...' );
 		button.current.disabled = true;
 
-		const { name, email, tel, message } = event.target.elements;
+		const { name, email, tel, message, privacy } = event.target.elements;
 
 		let data = {
-			name: name.value,
-			email: email.value,
-			tel: tel.value,
-			message: message.value,
+			"name": name.value,
+			"email": email.value,
+			"tel": tel.value,
+			"message": message.value,
+			"privacy": privacy.value,
 		};
 
 		// console.log( data );
