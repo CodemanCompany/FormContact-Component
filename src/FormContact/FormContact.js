@@ -154,7 +154,7 @@ const FormContact = () => {
 							<label className="form-label" htmlFor="name">
 								Nombre: *
 							</label>
-							<input id="name" className="form-control" maxlength="100" placeholder="Nombre" required="required" type="text" />
+							<input id="name" className="form-control" maxLength="100" pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ ]+$" placeholder="Nombre" required="required" title="Por favor, ingrese un nombre válido que solo contenga letras y espacios." type="text" />
 						</div>
 					</div>
 					<div className="col-lg-6 col-12">
@@ -162,7 +162,7 @@ const FormContact = () => {
 							<label className="form-label" htmlFor="email">
 								Correo electrónico: *
 							</label>
-							<input id="email" className="form-control" maxlength="60" placeholder="Correo electrónico" required="required" type="email" />
+							<input id="email" className="form-control" maxLength="60" placeholder="Correo electrónico" required="required" type="email" />
 						</div>
 					</div>
 				</div>
@@ -171,7 +171,7 @@ const FormContact = () => {
 					<label className="form-label" htmlFor="tel">
 						Teléfono: *
 					</label>
-					<input id="tel" className="form-control" maxlength="30" placeholder="Teléfono" required="required" type="tel" />
+					<input id="tel" className="form-control" maxLength="30" placeholder="Teléfono" required="required" type="tel" />
 				</div>
 
 				<div className="mb-3">
